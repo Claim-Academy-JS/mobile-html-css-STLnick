@@ -4,22 +4,236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <!-- Modern Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
-
   <!-- Source Code Pro font -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <!-- Roboto Condensed font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- TODO: Update '<title>'. -->
   <title>DEV.to Mobile Recreation</title>
 </head>
 
 <body>
+  <header>
+    <div class="top-bar flex">
+      <a href="dev.to">
+        <img class="logo" src="img/devLogo.png" alt="DEV Community Logo">
+      </a>
+      <label for="search" class="screen-reader-text">Search</label>
+      <input type="text" name="search" id="search" class="search-bar" placeholder="Search">
+      <div class="top-bar--links flex flex--align-center flex--justify-end">
+        <a href="#">
+          <img class="icon" src="img/chatbox.svg" alt="Chat icon">
+        </a>
+        <a href="#">
+          <img class="icon" src="img/notifications.svg" alt="Notification icon">
+        </a>
+        <a href="#">
+          <img class="icon" src="img/person-sharp.svg" alt="Person icon">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="posts-bar flex">
+    <a href="#">
+      <img class="icon" src="img/server.svg" alt="Server icon">
+    </a>
+    <div class="posts-bar--middle flex flex--justify-between">
+      <h3 class="posts-header">Posts</h3>
+      <label for="feed-select" class="screen-reader-text"></label>
+      <select name="feed-select" id="feed-select">
+        <option value="feed">Feed</option>
+        <option value="week">Week</option>
+        <option value="month">Month</option>
+        <option value="year">Year</option>
+        <option value="infinity">Infinity</option>
+        <option value="latest">Latest</option>
+      </select>
+    </div>
+    <a href="#">
+      <img class="icon" src="img/flash.svg" alt="Lightning bolt icon">
+    </a>
+  </div>
+  <div class="posts-container flex flex--column">
+    <div class="post-card flex">
+      <div class="post-card--user flex flex--justify-center">
+        <a href="#">
+          <img class="icon user-icon" src="img/person-sharp.svg" alt="">
+        </a>
+      </div>
+      <div class="post-card--main flex flex--column flex--justify-between">
+        <div class="post-username-datetime-container flex flex--column">
+          <span class="post-username user-post-text text-gray">User name</span>
+          <span class="post-datetime small-post-text text-gray">Jul 15 (x min ago)</span>
+        </div>
+        <h3 class="post-title">This is My Post</h3>
+        <div class="post-tags flex flex-wrap">
+          <span class="post-tag small-post-text text-gray">#webdev</span>
+          <span class="post-tag small-post-text text-gray">#javascript</span>
+          <span class="post-tag small-post-text text-gray">#codenewbie</span>
+        </div>
+        <div class="post-footer flex">
+          <div class="hearts flex">
+            <img class="icon-sm" src="img/heart-outline.svg" alt="Heart outline icon">
+            <span class="hearts-count small-post-text">0</span>
+          </div>
+          <div class="post-footer--middle flex flex--justify-between">
+            <div class="comments flex">
+              <img class="icon-sm" src="img/chatbubbles-outline.svg" alt="Chat bubbles icon for comments">
+              <span class="comments-count small-post-text">0</span>
+            </div>
+            <span class="read-time small-post-text text-gray">X min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card--save flex flex--align-end">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+    <div class="post-card flex">
+      <div class="post-card--user flex flex--justify-center">
+        <a href="#">
+          <img class="icon user-icon" src="img/person-sharp.svg" alt="">
+        </a>
+      </div>
+      <div class="post-card--main flex flex--column flex--justify-between">
+        <div class="post-username-datetime-container flex flex--column">
+          <span class="post-username user-post-text text-gray">User name</span>
+          <span class="post-datetime small-post-text text-gray">Jul 15 (x min ago)</span>
+        </div>
+        <h3 class="post-title">This is My Post</h3>
+        <div class="post-tags flex flex-wrap">
+          <span class="post-tag small-post-text text-gray">#webdev</span>
+          <span class="post-tag small-post-text text-gray">#javascript</span>
+          <span class="post-tag small-post-text text-gray">#codenewbie</span>
+        </div>
+        <div class="post-footer flex">
+          <div class="hearts flex">
+            <img class="icon-sm" src="img/heart-outline.svg" alt="Heart outline icon">
+            <span class="hearts-count small-post-text">0</span>
+          </div>
+          <div class="post-footer--middle flex flex--justify-between">
+            <div class="comments flex">
+              <img class="icon-sm" src="img/chatbubbles-outline.svg" alt="Chat bubbles icon for comments">
+              <span class="comments-count small-post-text">0</span>
+            </div>
+            <span class="read-time small-post-text text-gray">X min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card--save flex flex--align-end">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+    <div class="post-card flex">
+      <div class="post-card--user flex flex--justify-center">
+        <a href="#">
+          <img class="icon user-icon" src="img/person-sharp.svg" alt="">
+        </a>
+      </div>
+      <div class="post-card--main flex flex--column flex--justify-between">
+        <div class="post-username-datetime-container flex flex--column">
+          <span class="post-username user-post-text text-gray">User name</span>
+          <span class="post-datetime small-post-text text-gray">Jul 15 (x min ago)</span>
+        </div>
+        <h3 class="post-title">This is My Post</h3>
+        <div class="post-tags flex flex-wrap">
+          <span class="post-tag small-post-text text-gray">#webdev</span>
+          <span class="post-tag small-post-text text-gray">#javascript</span>
+          <span class="post-tag small-post-text text-gray">#codenewbie</span>
+        </div>
+        <div class="post-footer flex">
+          <div class="hearts flex">
+            <img class="icon-sm" src="img/heart-outline.svg" alt="Heart outline icon">
+            <span class="hearts-count small-post-text">0</span>
+          </div>
+          <div class="post-footer--middle flex flex--justify-between">
+            <div class="comments flex">
+              <img class="icon-sm" src="img/chatbubbles-outline.svg" alt="Chat bubbles icon for comments">
+              <span class="comments-count small-post-text">0</span>
+            </div>
+            <span class="read-time small-post-text text-gray">X min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card--save flex flex--align-end">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+    <div class="post-card flex">
+      <div class="post-card--user flex flex--justify-center">
+        <a href="#">
+          <img class="icon user-icon" src="img/person-sharp.svg" alt="">
+        </a>
+      </div>
+      <div class="post-card--main flex flex--column flex--justify-between">
+        <div class="post-username-datetime-container flex flex--column">
+          <span class="post-username user-post-text text-gray">User name</span>
+          <span class="post-datetime small-post-text text-gray">Jul 15 (x min ago)</span>
+        </div>
+        <h3 class="post-title">This is My Post</h3>
+        <div class="post-tags flex flex-wrap">
+          <span class="post-tag small-post-text text-gray">#webdev</span>
+          <span class="post-tag small-post-text text-gray">#javascript</span>
+          <span class="post-tag small-post-text text-gray">#codenewbie</span>
+        </div>
+        <div class="post-footer flex">
+          <div class="hearts flex">
+            <img class="icon-sm" src="img/heart-outline.svg" alt="Heart outline icon">
+            <span class="hearts-count small-post-text">0</span>
+          </div>
+          <div class="post-footer--middle flex flex--justify-between">
+            <div class="comments flex">
+              <img class="icon-sm" src="img/chatbubbles-outline.svg" alt="Chat bubbles icon for comments">
+              <span class="comments-count small-post-text">0</span>
+            </div>
+            <span class="read-time small-post-text text-gray">X min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card--save flex flex--align-end">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+    <div class="post-card flex">
+      <div class="post-card--user flex flex--justify-center">
+        <a href="#">
+          <img class="icon user-icon" src="img/person-sharp.svg" alt="">
+        </a>
+      </div>
+      <div class="post-card--main flex flex--column flex--justify-between">
+        <div class="post-username-datetime-container flex flex--column">
+          <span class="post-username user-post-text text-gray">User name</span>
+          <span class="post-datetime small-post-text text-gray">Jul 15 (x min ago)</span>
+        </div>
+        <h3 class="post-title">This is My Post</h3>
+        <div class="post-tags flex flex-wrap">
+          <span class="post-tag small-post-text text-gray">#webdev</span>
+          <span class="post-tag small-post-text text-gray">#javascript</span>
+          <span class="post-tag small-post-text text-gray">#codenewbie</span>
+        </div>
+        <div class="post-footer flex">
+          <div class="hearts flex">
+            <img class="icon-sm" src="img/heart-outline.svg" alt="Heart outline icon">
+            <span class="hearts-count small-post-text">0</span>
+          </div>
+          <div class="post-footer--middle flex flex--justify-between">
+            <div class="comments flex">
+              <img class="icon-sm" src="img/chatbubbles-outline.svg" alt="Chat bubbles icon for comments">
+              <span class="comments-count small-post-text">0</span>
+            </div>
+            <span class="read-time small-post-text text-gray">X min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card--save flex flex--align-end">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
 
+  </div>
 
   <!-- 'Connect' JS to this HTML file. -->
   <script src="./scripts.js"></script>

@@ -3,6 +3,119 @@ body {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.top-bar {
+  padding-left: 0.25em;
+}
+
+.logo {
+  height: 1.75em;
+  width: 2.5em;
+}
+
+.search-bar {
+  height: 1.75em;
+  width: 8em;
+}
+
+.icon {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.icon-sm {
+  height: 0.75em;
+  margin-right: 0.25em;
+  width: 0.75em;
+}
+
+.logo,
+.search-bar,
+.icon {
+  margin: 0.25em;
+}
+
+.top-bar--links {
+  width: 100%;
+  padding-right: 0.25em;
+}
+
+.posts-bar {
+  background-color: #ddd;
+  padding: 0.25em;
+}
+
+.posts-bar--middle {
+  width: 100%;
+}
+
+.posts-header {
+  margin: 0.25em;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  height: 20vh; /* Set just for now once filled in let height be auto */
+  padding: 0.25em 0;
+  width: 100%;
+}
+
+.post-card--user {
+  width: 10vw;
+}
+
+.post-card--main {
+  width: 72vw;
+}
+
+.post-card--main>* {
+  margin-bottom: 0.5em;
+}
+
+.post-title {
+  font-size: 1em;
+  margin: 0 0 0.5em 0;
+}
+
+.post-tag {
+  font-family: 'Source Code Pro';
+  margin-right: 0.5em;
+}
+
+.post-footer {
+  margin-bottom: 0.25em;
+}
+
+.hearts-count,
+.comments-count {
+  margin-top: 0.05em;
+}
+
+.post-footer--middle {
+  margin-left: 0.5em;
+  margin-right: 0.25em;
+  width: 100%;
+}
+
+.post-card--save {
+  width: 18vw;
+}
+
+.save-btn {
+  margin: 0.05em auto;
+}
+
+.user-icon {
+  background-color: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #ddd;
+}
+
+/* * Reusuable Classes * */
+
 .flex {
   display: flex;
 }
@@ -15,12 +128,41 @@ body {
   align-items: center;
 }
 
+.flex--align-end {
+  align-items: flex-end;
+}
+
+.flex--justify-between {
+  justify-content: space-between;
+}
+
 .flex--justify-center {
   justify-content: center;
+}
+
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
 }
 
 .screen-reader-text {
   left: -99999px;
   position: absolute;
   top: -99999px;
+}
+
+.small-post-text {
+  font-size: 0.65em;
+}
+
+.text-gray {
+  color: #666;
+}
+
+.user-post-text {
+  font-size: 0.75em;
+  font-weight: bold;
 }
