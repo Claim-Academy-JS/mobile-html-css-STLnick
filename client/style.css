@@ -39,8 +39,8 @@ a {
 }
 
 .top-bar--links {
-  width: 100%;
   padding-right: 0.25em;
+  width: 100%;
 }
 
 .posts-bar {
@@ -71,7 +71,7 @@ a {
   width: 72vw;
 }
 
-.post-card--main>* {
+.post-card--main > * {
   margin-bottom: 0.5em;
 }
 
