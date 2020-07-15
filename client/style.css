@@ -8,6 +8,7 @@ a {
 }
 
 .top-bar {
+  border-bottom: 1px solid #eee;
   padding-left: 0.25em;
 }
 
@@ -54,6 +55,15 @@ a {
 
 .posts-header {
   margin: 0.25em;
+}
+
+.featured {
+  max-height: 10em;
+  overflow: hidden;
+}
+
+.featured-img {
+  width: 100vw;
 }
 
 .post-card {
