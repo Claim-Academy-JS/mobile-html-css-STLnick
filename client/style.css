@@ -1,3 +1,8 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -12,4 +17,10 @@
 
 .flex--justify-center {
   justify-content: center;
+}
+
+.screen-reader-text {
+  left: -99999px;
+  position: absolute;
+  top: -99999px;
 }
