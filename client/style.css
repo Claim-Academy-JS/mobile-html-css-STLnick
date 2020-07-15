@@ -8,6 +8,7 @@ a {
 }
 
 .top-bar {
+  border-bottom: 1px solid #eee;
   padding-left: 0.25em;
 }
 
@@ -39,8 +40,8 @@ a {
 }
 
 .top-bar--links {
-  width: 100%;
   padding-right: 0.25em;
+  width: 100%;
 }
 
 .posts-bar {
@@ -54,6 +55,15 @@ a {
 
 .posts-header {
   margin: 0.25em;
+}
+
+.featured {
+  max-height: 10em;
+  overflow: hidden;
+}
+
+.featured-img {
+  width: 100vw;
 }
 
 .post-card {
@@ -71,7 +81,7 @@ a {
   width: 72vw;
 }
 
-.post-card--main>* {
+.post-card--main > * {
   margin-bottom: 0.5em;
 }
 
