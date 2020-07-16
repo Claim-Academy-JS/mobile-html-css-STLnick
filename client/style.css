@@ -9,17 +9,31 @@ a {
 
 .top-bar {
   border-bottom: 1px solid #eee;
-  padding-left: 0.25em;
+  padding: 0.2em 0;
 }
 
 .logo {
+  border-radius: 0.15em;
   height: 1.75em;
   width: 2.5em;
 }
 
 .search-bar {
-  height: 1.75em;
-  width: 8em;
+  padding: 0.35em 0.5em;
+}
+
+#feed-select {
+  background-image: url(./img/caret-down.svg);
+  padding: 0.25em;
+  width: 5em;
+}
+
+.search-bar,
+#feed-select {
+  background-color: #f7f7f7;
+  border: 1px solid #c7c7d1;
+  border-radius: 3px;
+  font-size: 0.85em;
 }
 
 .icon {
@@ -28,20 +42,23 @@ a {
 }
 
 .icon-sm {
-  height: 0.75em;
+  height: 1em;
   margin-right: 0.25em;
-  width: 0.75em;
+  width: 1em;
 }
 
 .logo,
-.search-bar,
 .icon {
   margin: 0.25em;
 }
 
 .top-bar--links {
-  padding-right: 0.25em;
+  padding-left: 0.5em;
   width: 100%;
+}
+
+.top-bar-link {
+  margin-right: 0.5em;
 }
 
 .posts-bar {
@@ -58,7 +75,7 @@ a {
 }
 
 .featured {
-  max-height: 10em;
+  max-height: 8em;
   overflow: hidden;
 }
 
@@ -68,8 +85,7 @@ a {
 
 .post-card {
   border: 1px solid #ddd;
-  height: 20vh; /* Set just for now once filled in let height be auto */
-  padding: 0.25em 0;
+  padding: 0.6em 0 0.25em 0;
   width: 100%;
 }
 
@@ -82,12 +98,16 @@ a {
 }
 
 .post-card--main > * {
+  margin-bottom: 1em;
+}
+
+.post-username-datetime-container {
   margin-bottom: 0.5em;
 }
 
 .post-title {
-  font-size: 1em;
-  margin: 0 0 0.5em 0;
+  font-size: 1.15em;
+  margin-top: 0;
 }
 
 .post-tag {
@@ -100,12 +120,13 @@ a {
 }
 
 .hearts-count,
-.comments-count {
-  margin-top: 0.05em;
+.comments-count,
+.read-time {
+  margin-top: 0.2em;
 }
 
 .post-footer--middle {
-  margin-left: 0.5em;
+  margin-left: 1em;
   margin-right: 0.25em;
   width: 100%;
 }
@@ -115,7 +136,12 @@ a {
 }
 
 .save-btn {
+  background-color: #dddddf;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 0.75em;
   margin: 0.05em auto;
+  padding: 0.35em 0.65em;
 }
 
 .user-icon {
@@ -140,6 +166,10 @@ a {
 
 .flex--align-end {
   align-items: flex-end;
+}
+
+.flex--justify-around {
+  justify-content: space-around;
 }
 
 .flex--justify-between {
